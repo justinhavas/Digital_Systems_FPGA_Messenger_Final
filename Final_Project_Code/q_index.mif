@@ -1,0 +1,24 @@
+-- Memory Initialization File for test circle
+
+WIDTH=24;
+DEPTH=14;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+    000  :   6b6b6b;
+    001  :   d1d1d1;
+    002  :   000000;
+    003  :   aaaaaa;
+    004  :   9c9c9c;
+    005  :   424242;
+    006  :   262626;
+    007  :   8d8d8d;
+    008  :   f4f4f4;
+    009  :   7d7d7d;
+    00a  :   dddddd;
+    00b  :   e9e9e9;
+    00c  :   585858;
+    00d  :   ffffff;
+END;

@@ -1,0 +1,123 @@
+module emoji_audio_controller(
+input FPGA_clock,
+input [7:0] ascii_code,
+output [31:0] audio_out,
+output reg [13:0] address_laugh, address_love, address_cry, address_kiss
+);
+wire [31:0] q_kiss, q_cry, q_laugh, q_love;
+
+
+//always @(posedge FPGA_clock)
+//begin
+//	if (ascii_code == 8'h80)
+//	begin
+//		audio_out = q_love;
+//	end
+//	else if (ascii_code == 8'h81)
+//	begin
+//		audio_out = q_laugh;
+//	end
+//	else if (ascii_code == 8'h82)
+//	begin
+//		audio_out = q_cry;
+//	end
+//	else if (ascii_code == 8'h83)
+//	begin
+//		audio_out = q_kiss;
+//	end
+//end
+
+assign audio_out = q_love + q_laugh + q_cry + q_kiss;
+
+wire clock_44;
+
+clock_divider_general clock_divider_44(
+FPGA_clock, 
+32'd88200, 
+clock_44);
+
+reg [7:0] prev_ascii_44;
+
+initial
+begin
+	prev_ascii_44 = 8'h0;
+	address_kiss = 14'd0;
+	address_laugh = 14'd0;
+	address_love = 14'd0;
+	address_cry = 14'd0;
+end
+
+always @(posedge clock_44)
+begin
+	
+	if (ascii_code != prev_ascii_44 & ascii_code == 8'h83) //this is our signal to start playing the sound
+	begin
+		address_kiss = 14'd0;
+	end
+	else
+	begin
+		if (address_kiss != 14'h3FFF)
+		begin
+			address_kiss = address_kiss + 14'd1;
+		end
+	end
+
+	if (ascii_code != prev_ascii_44 & ascii_code == 8'h80) //this is our signal to start playing the sound
+	begin
+		address_love = 14'd0;
+	end
+	else
+	begin
+		if (address_love != 14'h3FFF)
+		begin
+			address_love = address_love + 14'd1;
+		end
+	end
+	
+	if (ascii_code != prev_ascii_44 & ascii_code == 8'h81) //this is our signal to start playing the sound
+	begin
+		address_cry = 14'd0;
+	end
+	else
+	begin
+		if (address_cry != 14'h3FFF)
+		begin
+			address_cry = address_cry + 14'd1;
+		end
+	end
+	
+	if (ascii_code != prev_ascii_44 & ascii_code == 8'h82) //this is our signal to start playing the sound
+	begin
+		address_laugh = 14'd0;
+	end
+	else
+	begin
+		if (address_laugh != 14'h3FFF)
+		begin
+			address_laugh = address_laugh + 14'd1;
+		end
+	end
+	prev_ascii_44 = ascii_code;
+end
+
+
+love_dmem my_love_dmem(
+	address_love,
+	clock_44,
+	q_love);
+
+kiss_dmem my_kiss_dmem(
+	address_kiss,
+	clock_44,
+	q_kiss);
+	
+laugh_dmem my_laugh_dmem(
+	address_laugh,
+	clock_44,
+	q_laugh);
+	
+cry_dmem my_cry_dmem(
+	address_cry,
+	clock_44,
+	q_cry);
+endmodule

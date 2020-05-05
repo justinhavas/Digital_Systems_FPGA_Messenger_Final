@@ -1,0 +1,389 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'p1|altpll_component|pll|clk[2]'
+Slack : -24.435
+TNS   : -194.286
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -21.683
+TNS   : -863.543
+
+Type  : Slow 1200mV 85C Model Setup 'avconf:avc|LUT_INDEX[1]'
+Slack : -4.033
+TNS   : -58.954
+
+Type  : Slow 1200mV 85C Model Setup 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : -3.501
+TNS   : -200.875
+
+Type  : Slow 1200mV 85C Model Setup 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : -3.186
+TNS   : -45.676
+
+Type  : Slow 1200mV 85C Model Setup 'send_sound_controller:my_send_controller|audio_clock'
+Slack : -2.985
+TNS   : -41.168
+
+Type  : Slow 1200mV 85C Model Setup 'avconf:avc|mI2C_CTRL_CLK'
+Slack : -2.918
+TNS   : -119.318
+
+Type  : Slow 1200mV 85C Model Setup 'gpio[35]'
+Slack : -2.259
+TNS   : -128.557
+
+Type  : Slow 1200mV 85C Model Setup 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : -1.797
+TNS   : -78.696
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'avconf:avc|LUT_INDEX[1]'
+Slack : 0.344
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'send_sound_controller:my_send_controller|audio_clock'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'avconf:avc|mI2C_CTRL_CLK'
+Slack : 0.388
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'gpio[35]'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'p1|altpll_component|pll|clk[2]'
+Slack : 0.644
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'CLOCK_50'
+Slack : 1.871
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'p1|altpll_component|pll|clk[2]'
+Slack : 11.347
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'CLOCK_50'
+Slack : 1.309
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'p1|altpll_component|pll|clk[2]'
+Slack : 6.745
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'gpio[35]'
+Slack : -3.210
+TNS   : -118.860
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : -2.693
+TNS   : -158.136
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : -2.693
+TNS   : -38.249
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'send_sound_controller:my_send_controller|audio_clock'
+Slack : -2.693
+TNS   : -38.249
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : -1.285
+TNS   : -79.670
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'avconf:avc|mI2C_CTRL_CLK'
+Slack : -1.285
+TNS   : -74.530
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'emoji_debouncer:my_emoji_debouncer|debounce_clock'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'avconf:avc|LUT_INDEX[1]'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.626
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
+Slack : 19.717
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[2]'
+Slack : -20.091
+TNS   : -159.669
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -19.573
+TNS   : -484.427
+
+Type  : Slow 1200mV 0C Model Setup 'avconf:avc|LUT_INDEX[1]'
+Slack : -3.722
+TNS   : -54.315
+
+Type  : Slow 1200mV 0C Model Setup 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : -3.134
+TNS   : -178.545
+
+Type  : Slow 1200mV 0C Model Setup 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : -2.979
+TNS   : -42.011
+
+Type  : Slow 1200mV 0C Model Setup 'send_sound_controller:my_send_controller|audio_clock'
+Slack : -2.644
+TNS   : -35.978
+
+Type  : Slow 1200mV 0C Model Setup 'avconf:avc|mI2C_CTRL_CLK'
+Slack : -2.618
+TNS   : -104.892
+
+Type  : Slow 1200mV 0C Model Setup 'gpio[35]'
+Slack : -2.000
+TNS   : -109.261
+
+Type  : Slow 1200mV 0C Model Setup 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : -1.536
+TNS   : -65.606
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.256
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'avconf:avc|mI2C_CTRL_CLK'
+Slack : 0.338
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'send_sound_controller:my_send_controller|audio_clock'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'avconf:avc|LUT_INDEX[1]'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'gpio[35]'
+Slack : 0.387
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[2]'
+Slack : 0.585
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : 2.554
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[2]'
+Slack : 12.139
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 1.177
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
+Slack : 5.977
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'gpio[35]'
+Slack : -3.210
+TNS   : -118.860
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : -2.649
+TNS   : -156.728
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : -2.649
+TNS   : -37.897
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'send_sound_controller:my_send_controller|audio_clock'
+Slack : -2.649
+TNS   : -37.897
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : -1.285
+TNS   : -79.670
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'avconf:avc|mI2C_CTRL_CLK'
+Slack : -1.285
+TNS   : -74.530
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'emoji_debouncer:my_emoji_debouncer|debounce_clock'
+Slack : -1.285
+TNS   : -5.140
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'avconf:avc|LUT_INDEX[1]'
+Slack : 0.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.648
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
+Slack : 19.697
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -9.998
+TNS   : -55.339
+
+Type  : Fast 1200mV 0C Model Setup 'avconf:avc|LUT_INDEX[1]'
+Slack : -1.546
+TNS   : -20.963
+
+Type  : Fast 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[2]'
+Slack : -1.451
+TNS   : -10.767
+
+Type  : Fast 1200mV 0C Model Setup 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : -1.310
+TNS   : -65.107
+
+Type  : Fast 1200mV 0C Model Setup 'send_sound_controller:my_send_controller|audio_clock'
+Slack : -1.093
+TNS   : -13.610
+
+Type  : Fast 1200mV 0C Model Setup 'avconf:avc|mI2C_CTRL_CLK'
+Slack : -1.048
+TNS   : -29.811
+
+Type  : Fast 1200mV 0C Model Setup 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : -0.966
+TNS   : -12.667
+
+Type  : Fast 1200mV 0C Model Setup 'gpio[35]'
+Slack : -0.553
+TNS   : -19.093
+
+Type  : Fast 1200mV 0C Model Setup 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : -0.436
+TNS   : -11.048
+
+Type  : Fast 1200mV 0C Model Hold 'avconf:avc|LUT_INDEX[1]'
+Slack : 0.005
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.046
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : 0.149
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : 0.161
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'send_sound_controller:my_send_controller|audio_clock'
+Slack : 0.162
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'avconf:avc|mI2C_CTRL_CLK'
+Slack : 0.173
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'gpio[35]'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[2]'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'CLOCK_50'
+Slack : 6.350
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[2]'
+Slack : 15.241
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'CLOCK_50'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
+Slack : 3.388
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'gpio[35]'
+Slack : -3.000
+TNS   : -116.022
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'emoji_audio_controller:my_emoji_audio_controller|clock_divider_general:clock_divider_44|clock_out'
+Slack : -1.000
+TNS   : -88.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'gpio_transmitter:my_transmitter|gpio_clock_divider:my_clock_divider|gpio_clock'
+Slack : -1.000
+TNS   : -62.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'avconf:avc|mI2C_CTRL_CLK'
+Slack : -1.000
+TNS   : -58.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'receive_sound_controller:my_receive_controller|audio_clock'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'send_sound_controller:my_send_controller|audio_clock'
+Slack : -1.000
+TNS   : -21.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'emoji_debouncer:my_emoji_debouncer|debounce_clock'
+Slack : -1.000
+TNS   : -4.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'avconf:avc|LUT_INDEX[1]'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.369
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
+Slack : 19.749
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,267 @@
+Flow report for skeleton
+Thu Dec 06 17:47:38 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Thu Dec 06 17:47:38 2018       ;
+; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name                      ; skeleton                                    ;
+; Top-level Entity Name              ; skeleton                                    ;
+; Family                             ; Cyclone IV E                                ;
+; Device                             ; EP4CE115F29C7                               ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 7,979 / 114,480 ( 7 % )                     ;
+;     Total combinational functions  ; 7,533 / 114,480 ( 7 % )                     ;
+;     Dedicated logic registers      ; 2,773 / 114,480 ( 2 % )                     ;
+; Total registers                    ; 2773                                        ;
+; Total pins                         ; 405 / 529 ( 77 % )                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 3,426,304 / 3,981,312 ( 86 % )              ;
+; Embedded Multiplier 9-bit elements ; 12 / 532 ( 2 % )                            ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 12/06/2018 17:36:35 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; skeleton            ;
++-------------------+---------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                              ;
++--------------------------------------+-----------------------------------------+---------------+-------------+----------------+
+; Assignment Name                      ; Value                                   ; Default Value ; Entity Name ; Section Id     ;
++--------------------------------------+-----------------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                ; 52236592199.154413579404000             ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                      ; --            ; --          ; skeleton_tb    ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; skeleton_tb                             ; --            ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                             ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)               ; <None>        ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                         ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; Altera_UP_PS2_Command_Out.v             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; Altera_UP_PS2_Data_In.v                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; alu.v                                   ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; and_bitwise.v                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ascii_process.mif                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; assignment_defaults.qdf                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; barrelShiftLeft.v                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; barrelShiftRight.v                      ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; branchTest.mif                          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; branchTest_0.mif                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; bypass_check.mif                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; checkRightShift.mif                     ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; csa_2bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; csa_4bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; csa_8bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; csa_16bit.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; csa_adder.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; decoder.v                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dffe_ref.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dflipflop.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dflipflop_with_async_clear.v.bak        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; divider.v                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dmem.bsf                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dmem.cmp                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dmem.mif                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dmem.qip                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; dmem.v                                  ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ethernet_controller.v.bak               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ethernet_receiver.v.bak                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ethernet_transmitter.v.bak              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ethtest.sip                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ethtest.spd                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ethtest_sim.f                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; every_instruction_nojump_andmultdiv.mif ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; every_instruction_noMult.mif            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; full_adder.v                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; gpio_receiver.v                         ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; gpio_receiver.v.bak                     ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; gpio_transmitter.v                      ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; gpio_transmitter.v.bak                  ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; Hexadecimal_To_Seven_Segment.v          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; imem.bsf                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; imem.cmp                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; imem.mif                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; imem.qip                                ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; imem.v                                  ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; img_bars.mif                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; img_data.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; img_data_logo.mif                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; img_index.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; index.mif                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; index_logo.mif                          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; instructDecode.v                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; jumps.mif                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; lab7_img_data.mif                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; lab7_img_index.mif                      ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; latch.v                                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; latch_pros.v                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; lcd.sv                                  ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mult_check.mif                          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; multdiv.v                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; multiplier.v                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mux_1bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mux_2bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mux_4bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mux_8bit.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mux_16bit.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; mux_32bit.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; not_bitwise.v                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; not_equal_reg0.v                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; or_bitwise.v                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; overflow_add.mif                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; overflow_again.mif                      ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; overflow_real.mif                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; overflow0.mif                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; pll.bsf                                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; pll.cmp                                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; pll.ppf                                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; pll.qip                                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; pll.v                                   ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; processor.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; processor_ins.mif                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; product_register.v                      ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; proposal.pdf                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; proposal.tex                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; PS2_Controller.v                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; PS2_Interface.v                         ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ps2_interface_wrapper.v                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ps2_interface_wrapper.v.bak             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ps2_to_ascii.v                          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; ps2_to_ascii.v.bak                      ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; qar_info.json                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; README.md                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; regfile.v                               ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; register.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; Reset_Delay.v                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; setx_check.mif                          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; shiftLeft.v                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; shiftRight.v                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; sign_extend.v                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; sign_extendReg.v                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton.qpf                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton.qsf                            ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton.qsf.bak                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton.restore.rpt                    ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton.v.bak                          ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton_assignment_defaults.qdf        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton_tb.v                           ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; skeleton_tb.v.bak                       ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; sr_latch.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; stall_check.mif                         ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; stallAndFlush_check.mif                 ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; test_regfile.mif                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; tristate.v                              ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; tristate_1bit.v                         ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; tristate_5bit.v                         ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; tristate_64bit.v                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; VGA_Audio_PLL.v                         ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; vga_controller.v                        ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_FILE                  ; video_sync_generator.v                  ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_MODULE_NAME           ; skeleton_tb                             ; --            ; --          ; skeleton_tb    ;
+; EDA_TEST_BENCH_NAME                  ; skeleton_tb                             ; --            ; --          ; eda_simulation ;
+; EDA_TIME_SCALE                       ; 1 ps                                    ; --            ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                      ; --            ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                       ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll.bsf                                 ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll.cmp                                 ; --            ; --          ; --             ;
+; MISC_FILE                            ; pll.ppf                                 ; --            ; --          ; --             ;
+; MISC_FILE                            ; imem.bsf                                ; --            ; --          ; --             ;
+; MISC_FILE                            ; imem_inst.v                             ; --            ; --          ; --             ;
+; MISC_FILE                            ; imem_bb.v                               ; --            ; --          ; --             ;
+; MISC_FILE                            ; imem.inc                                ; --            ; --          ; --             ;
+; MISC_FILE                            ; imem.cmp                                ; --            ; --          ; --             ;
+; MISC_FILE                            ; gpio_pll.ppf                            ; --            ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                    ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; 16764057                                ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                   ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                  ; --            ; --          ; Top            ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                     ; --            ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW   ; --            ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                            ; --            ; --          ; --             ;
++--------------------------------------+-----------------------------------------+---------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:03:43     ; 1.0                     ; 5505 MB             ; 00:03:45                           ;
+; Fitter                    ; 00:05:44     ; 1.0                     ; 5695 MB             ; 00:05:46                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4995 MB             ; 00:00:09                           ;
+; TimeQuest Timing Analyzer ; 00:00:27     ; 1.0                     ; 5199 MB             ; 00:00:22                           ;
+; EDA Netlist Writer        ; 00:00:23     ; 1.0                     ; 5084 MB             ; 00:00:21                           ;
+; Total                     ; 00:10:27     ; --                      ; --                  ; 00:10:23                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; WIN-53E4F29TB3P  ; Windows 8 ; 6.2        ; x86_64         ;
+; Fitter                    ; WIN-53E4F29TB3P  ; Windows 8 ; 6.2        ; x86_64         ;
+; Assembler                 ; WIN-53E4F29TB3P  ; Windows 8 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; WIN-53E4F29TB3P  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; WIN-53E4F29TB3P  ; Windows 8 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
+quartus_fit --read_settings_files=off --write_settings_files=off skeleton -c skeleton
+quartus_asm --read_settings_files=off --write_settings_files=off skeleton -c skeleton
+quartus_sta skeleton -c skeleton
+quartus_eda --read_settings_files=off --write_settings_files=off skeleton -c skeleton
+
+
+

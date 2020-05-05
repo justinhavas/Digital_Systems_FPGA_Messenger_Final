@@ -1,0 +1,164 @@
+\documentclass[letterpaper]{article}
+\usepackage{amsmath}
+\usepackage[title]{appendix}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[table]{xcolor}
+\newcommand{\foo}{\hspace{-2.3pt}$\bullet$ \hspace{5pt}}
+
+\begin{document}
+
+\title{ECE 350: Digital Systems Final Project Proposal}
+\author{Dylan Peters, Justin Havas, Noah Pritt}
+\date{November 3, 2018}
+\maketitle
+
+\section*{Duke Community Standard}
+
+By submitting this \LaTeX{} document, I affirm that
+\begin{enumerate}
+    \item I understand that each \texttt{git} commit I create in this repository is a submission
+    \item I affirm that each submission complies with the Duke Community Standard and the guidelines set forth for this assignment
+    \item I further acknowledge that any content not included in this commit under the version control system cannot be considered as a part of my submission.
+    \item Finally, I understand that a submission is considered submitted when it has been pushed to the server.
+\end{enumerate}
+
+\section{Overview}
+Our idea is to create a messenger application that allows people to chat from one FPGA to another, connected via ethernet. This project will start out as a simple chat application, and we will add extensions to increase the types of communication that are possible. For example, from the basic text chat application, we could expand to allow sending of photos, voice calling, and even video chat.
+
+\section{Inputs and Outputs}
+The FPGA should be able to read inputs from a keyboard using the PS2 protocol we learned about in lab.
+The FPGA should be able to process the keyboard inputs and format them as data packets to be outputted via the ethernet cable.
+The FPGA should then be able to read the input from the ethernet cable (sent from the other FGPA), and process the letters that were sent.
+Finally, the FPGA will need to output visuals onto a screen via VGA in order to display the message that was received.
+
+If we are able to add further extensions, we would like to add voice and video calls. In order to implement these, the FPGA will need to be able to take sound input via the "Audio In" port and output sound via the 35 mm headphone jack. Finally, the FPGA will need to take input from the "Video In" port, process that data, send it across the ethernet, and the FPGA on the other side will need to receive and display that data.
+
+\section{Tasks}
+\begin{enumerate}
+\item Read input from a keyboard via PS2 protocol
+\begin{enumerate}
+\item This is necessary in order for the user to be able to type messages.
+\item This will be of mild difficulty, as we have not yet done PS2 protocols.
+\item We will use the processor to decide what to do with the letter that was typed.
+\item Input: Signal from PS2 keyboard
+\item Output: Letter that was typed
+\item Processor Use: Moderate
+\item Points: 10
+\end{enumerate}
+
+\item Display text on screen via VGA
+\begin{enumerate}
+\item This will allow the user to see what is being typed and received.
+\item The difficulty of this is based on the fact that we will have to define how the letters should look and create images for each letter, which should be displayed next to each other neatly.
+\item Input: Letter that was typed on keyboard or received via ethernet
+\item Output: Text on screen via VGA
+\item Processor Use: Significant
+\item Points: 20
+\end{enumerate}
+
+\item Write data to ethernet port
+\begin{enumerate}
+\item This is necessary in order to communicate with the other FPGA.
+\item This will be very difficult because we need to ensure that the FPGAs are not both writing at the same time.
+\item Input: Letter to be written to ethernet
+\item Output: Signal on ethernet cord
+\item Processor Use: Moderate
+\item Points: 30
+\end{enumerate}
+
+\item Read data from ethernet port
+\begin{enumerate}
+\item This is necessary in order to communicate with the other FPGA.
+\item This will be very difficult because we need to ensure that the are synchronized so they can read the data from the other FPGA, which may have a clock cycle slightly offset from its own.
+\item Input: Signal on ethernet
+\item Output: Letter that was received
+\item Processor Use: Significant
+\item Points: 30
+\end{enumerate}
+
+\item Read input from a microphone and encode it to be sent to other FPGA
+\begin{enumerate}
+\item While we have already read microphone data, this task involves manipulating the data in order to send it to the other FPGA. This will likely require the processor in order to format the data to be sent.
+\item Input: Microphone data
+\item Output: Signal on ethernet cord
+\item Processor Use: Moderate
+\item Points: 10
+\end{enumerate}
+
+\item Read microphone data from ethernet and play it
+\begin{enumerate}
+\item By this point we will have learned how to read ethernet data, so the challenge will be to decode the microphone data from the text message data. This will require a good data encoding scheme that allows us to determine what each packet is for.
+\item Input: Signal on ethernet cord
+\item Output: Speaker signal
+\item Processor Use: Significant
+\item Points: 10
+\end{enumerate}
+
+\item Read input from a video camera and encode it into ethernet cord
+\begin{enumerate}
+\item This will require us to learn how videos are encoded, decode the data from the camera, and re-encode it onto the ethernet channel.
+\item This will be extremely difficult, as we have not discussed video in this class, and the camera data will be much denser than the microphone or keyboard data.
+\item Input: Video camera data
+\item Output: Signal on ethernet cord
+\item Processor Use: High
+\item Points: 30
+\end{enumerate}
+
+\item Read input from ethernet cord and display video on screen
+\begin{enumerate}
+\item This will require us to decode the data sent over the ethernet cord and display it in real-time, in order to allow two people to chat. This will be an extremely difficult task because of the amount of data being processed and received over the ethernet port.
+\item Input: Signal on ethernet port
+\item Output: Signal on VGA port to be displayed
+\item Processor Use: High
+\item Points: 30
+\end{enumerate}
+
+\item Apply dimming effect via FPGA switches
+\begin{enumerate}
+\item We want to allow the user to control the brightness of the on-screen text produced by the FPGA. To do this, we will use the switches on the FPGA as dimmers. When all the switches are at 1, then the image will be bright. When they are all 0, it will be dark, and when some of them are 1 and some are 0, it will be somewhat dim and somewhat bright.
+\item Input: Switch positions
+\item Output: VGA signal
+\item Processor Use: low
+\item Points: 10
+\end{enumerate}
+
+\item Use FPGA buttons to produce animations.
+\begin{enumerate}
+\item We want to allow the user to create on-screen animations using the buttons on the FPGA. For example, the user could press one of the buttons, and the screen would display confetti superimposed on top of the text messages.
+\item This will require color calculations when the animation is superimposed above the text.
+\item Input: Button presses
+\item Output: VGA signal with animations superimposed over background
+\item Processor Use: low
+\item Points: 10
+\end{enumerate}
+
+\item Save chat to SD card to persist between power cycles
+\begin{enumerate}
+\item We want to allow the user to continue chatting with someone after a reboot or loss of power to the FPGA. We can achieve this by saving the chat log to an SD card.
+\item This will require a lot of processor commands to calculate the proper addresses to save to and load from.
+\item This will also be a very difficult task because nobody has ever been able to save to SD cards before, so we will need to determine how to read to and write from it.
+\item Input: Chat log (stored in memory)
+\item Output: Chat log saved to SD card
+\item Processor Use: Very High
+\item Points: 30
+\end{enumerate}
+\end{enumerate}
+
+\section{Timeline}
+\scalebox{1}{
+\begin{tabular}{r |@{\foo} p{80mm}}
+
+PC 6: November 8 & Implement tasks 1 and 2. Type on a keyboard and see the text display on screen via VGA.\\
+PC 7: November 15 & Implement tasks 3 and 4. Read and write data between two FPGA boards via ethernet. \\
+Between PC 7 and PC 8: November 22 & Implement tasks 5 and 6. Record audio via microphone and send over ethernet. Read data from second FPGA board and play audio. \\
+PC 8: November 27 & Implement tasks 7 and 8. Use a video camera to record video and send over ethernet. Read data from second FPGA board and play video. \\
+Final submission: December 6 & Implement tasks 9, 10, 11. Apply dimming effect via FPGA switches, use FPGA buttons to produce animations, and save chat to SD card to persist between power cycles.\\
+\end{tabular}
+}
+
+\end{document}

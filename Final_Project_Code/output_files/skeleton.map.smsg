@@ -1,0 +1,5 @@
+Warning (10273): Verilog HDL warning at tristate_64bit.v(6): extended using "x" or "z" File: C:/Users/Dylan Peters/Desktop/merge_everything/master_3_point_0/tristate_64bit.v Line: 6
+Warning (10273): Verilog HDL warning at tristate_5bit.v(6): extended using "x" or "z" File: C:/Users/Dylan Peters/Desktop/merge_everything/master_3_point_0/tristate_5bit.v Line: 6
+Warning (10273): Verilog HDL warning at tristate.v(6): extended using "x" or "z" File: C:/Users/Dylan Peters/Desktop/merge_everything/master_3_point_0/tristate.v Line: 6
+Warning (10273): Verilog HDL warning at instructDecode.v(35): extended using "x" or "z" File: C:/Users/Dylan Peters/Desktop/merge_everything/master_3_point_0/instructDecode.v Line: 35
+Warning (10273): Verilog HDL warning at instructDecode.v(42): extended using "x" or "z" File: C:/Users/Dylan Peters/Desktop/merge_everything/master_3_point_0/instructDecode.v Line: 42
